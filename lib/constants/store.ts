@@ -8,8 +8,8 @@ import type {
 export const storeSortLabels: Record<StoreSortOption, string> = {
  destaque: "Destaque",
  mais_recentes: "Mais recentes",
- preco_menor: "Preço: menor para maior",
- preco_maior: "Preço: maior para menor",
+ preco_menor: "Preco: menor para maior",
+ preco_maior: "Preco: maior para menor",
  mais_vendidos: "Mais vendidos"
 };
 
@@ -19,9 +19,9 @@ export const storePaymentMethodOptions = [
 ] as const;
 
 export const storeOrderPolicyHighlights = [
- "A reserva de estoque acontece somente após pagamento aprovado.",
+ "A reserva de estoque acontece somente apos pagamento aprovado.",
  "A baixa de estoque acontece no momento do envio do pedido.",
- "Cancelamentos com retorno ao estoque passam por análise interna."
+ "Cancelamentos com retorno ao estoque passam por analise interna."
 ] as const;
 
 export const storePolicySections = [
@@ -29,9 +29,9 @@ export const storePolicySections = [
  id: "troca-devolucao",
  title: "Troca e devolucao",
  items: [
- "Solicitações de troca e devolucao podem ser abertas dentro do prazo legal após entrega.",
- "A análise considera estado da peça, etiqueta original e histórico do pedido.",
- "Aprovações geram orientação de envio e acompanhamento na plataforma."
+ "Solicitacoes de troca e devolucao podem ser abertas dentro do prazo legal apos entrega.",
+ "A analise considera estado da peca, etiqueta original e historico do pedido.",
+ "Aprovacoes geram orientacao de envio e acompanhamento na plataforma."
  ]
  },
  {
@@ -39,8 +39,8 @@ export const storePolicySections = [
  title: "Cancelamento da loja",
  items: [
  "Antes do pagamento aprovado, o pedido pode ser cancelado diretamente na plataforma.",
- "Após pagamento e antes do envio, o cancelamento entra em análise interna.",
- "Após envio, cancelamentos seguem fluxo de devolucao com validacao da equipe."
+ "Apos pagamento e antes do envio, o cancelamento entra em analise interna.",
+ "Apos envio, cancelamentos seguem fluxo de devolucao com validacao da equipe."
  ]
  }
 ] as const;
@@ -62,7 +62,7 @@ export const storeFallbackCategories: StoreCategory[] = [
  id: "fallback-category-casacos-jaquetas",
  slug: "casacos-jaquetas",
  name: "Casacos e Jaquetas",
- description: "Peças para composições premium em dias amenos."
+ description: "Pecas para composicoes premium em dias amenos."
  },
  {
  id: "fallback-category-conjuntos",
@@ -80,7 +80,7 @@ export const storeFallbackCategories: StoreCategory[] = [
  id: "fallback-category-saias-shorts",
  slug: "saias-shorts",
  name: "Saias e Shorts",
- description: "Peças versateis para looks urbanos e refinados."
+ description: "Pecas versateis para looks urbanos e refinados."
  }
 ];
 
@@ -97,7 +97,7 @@ export const storeFallbackCollections: StoreCollection[] = [
  id: "fallback-collection-atelier-essence",
  slug: "atelier-essence",
  name: "Atelier Essence",
- themeStyle: "Elegância contemporanea",
+ themeStyle: "Elegancia contemporanea",
  description: "Texturas premium para uso diario com assinatura autoral.",
  isFeatured: true
  },
@@ -114,7 +114,7 @@ export const storeFallbackCollections: StoreCollection[] = [
  slug: "gala-heritage",
  name: "Gala Heritage",
  themeStyle: "Festa e ocasiao especial",
- description: "Peças de impacto com acabamento refinado.",
+ description: "Pecas de impacto com acabamento refinado.",
  isFeatured: false
  }
 ];
@@ -313,9 +313,9 @@ export const storeFallbackProductDetails: StoreProductDetail[] = [
  slug: "jaqueta-noir-biker",
  skuBase: "JQT-NBK",
  name: "Jaqueta Noir Biker",
- shortDescription: "Jaqueta com recortes modernos e elegância urbana.",
+ shortDescription: "Jaqueta com recortes modernos e elegancia urbana.",
  description:
- "Peça versatil para meia estacao, com ziper frontal e estrutura leve para composições premium.",
+ "Peca versatil para meia estacao, com ziper frontal e estrutura leve para composicoes premium.",
  characteristics: ["Ziper frontal", "Recortes ergonomicos", "Uso urbano premium"],
  categorySlug: "casacos-jaquetas",
  categoryName: "Casacos e Jaquetas",
@@ -392,12 +392,12 @@ export const storeFallbackProductDetails: StoreProductDetail[] = [
  shortDescription: "Conjunto coordenado com blazer leve e calca reta.",
  description:
  "Conjunto pensado para praticidade sem abrir mao de acabamento sofisticado e conforto.",
- characteristics: ["Blazer leve", "Calca reta", "Composição coordenada"],
+ characteristics: ["Blazer leve", "Calca reta", "Composicao coordenada"],
  categorySlug: "conjuntos",
  categoryName: "Conjuntos",
  collectionSlug: "atelier-essence",
  collectionName: "Atelier Essence",
- themeStyle: "Elegância contemporanea",
+ themeStyle: "Elegancia contemporanea",
  basePrice: 349,
  compareAtPrice: 399,
  isFeatured: true,
@@ -409,7 +409,7 @@ export const storeFallbackProductDetails: StoreProductDetail[] = [
  id: "fallback-image-conjunto-1",
  imageUrl:
  "https://images.unsplash.com/photo-1543087903-1ac2ec7aa8ac?auto=format&fit=crop&w=1200&q=80",
- altText: "Conjunto Lumiere versão areia",
+ altText: "Conjunto Lumiere versao areia",
  displayOrder: 1
  },
  {
@@ -478,13 +478,13 @@ export const storeFallbackProductDetails: StoreProductDetail[] = [
  name: "Camisa Essence Seda",
  shortDescription: "Camisa premium com toque acetinado e fechamento delicado.",
  description:
- "Camisa para composições formais e casuais sofisticadas, com costura limpa e tecido de alta qualidade.",
+ "Camisa para composicoes formais e casuais sofisticadas, com costura limpa e tecido de alta qualidade.",
  characteristics: ["Toque acetinado", "Botoes personalizados", "Modelagem elegante"],
  categorySlug: "camisas-blusas",
  categoryName: "Camisas e Blusas",
  collectionSlug: "atelier-essence",
  collectionName: "Atelier Essence",
- themeStyle: "Elegância contemporanea",
+ themeStyle: "Elegancia contemporanea",
  basePrice: 219,
  compareAtPrice: null,
  isFeatured: false,
@@ -554,7 +554,7 @@ export const storeFallbackProductDetails: StoreProductDetail[] = [
  name: "Saia Midi Dourada",
  shortDescription: "Saia midi com brilho discreto e cintura alta.",
  description:
- "Saia com textura refinada para produções noturnas ou composições autorais durante o dia.",
+ "Saia com textura refinada para producoes noturnas ou composicoes autorais durante o dia.",
  characteristics: ["Cintura alta", "Comprimento midi", "Detalhes em dourado fosco"],
  categorySlug: "saias-shorts",
  categoryName: "Saias e Shorts",

@@ -350,26 +350,7 @@ async function getCatalogFromSupabase(
  const productsRows = productsResponse.data ?? [];
 
  if (productsRows.length === 0) {
- return {
- products: [],
- categories: categoriesRows.map((row) => ({
- id: row.id,
- slug: row.slug,
- name: row.name,
- description: row.description
- })),
- collections: collectionsRows.map((row) => ({
- id: row.id,
- slug: row.slug,
- name: row.name,
- themeStyle: row.theme_style,
- description: row.description,
- isFeatured: row.is_featured
- })),
- availableSizes: [],
- availableColors: [],
- filters
- };
+ return buildFallbackCatalog(filters);
  }
 
  const productIds = productsRows.map((row) => row.id);

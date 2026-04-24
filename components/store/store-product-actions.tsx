@@ -44,7 +44,7 @@ export function StoreProductActions({
 
  function runAddToCart(redirectToCheckout: boolean) {
  if (!selectedVariant) {
- setFeedbackMessage("Selecione uma variação para continuar.");
+ setFeedbackMessage("Selecione uma variacao para continuar.");
  return;
  }
 
@@ -74,7 +74,7 @@ export function StoreProductActions({
 
  function runToggleFavorite() {
  if (!selectedVariant) {
- setFeedbackMessage("Selecione uma variação para favoritar.");
+ setFeedbackMessage("Selecione uma variacao para favoritar.");
  return;
  }
 
@@ -102,7 +102,7 @@ export function StoreProductActions({
  <div className="grid gap-3 sm:grid-cols-2">
  <div className="space-y-1">
  <label className="text-xs font-medium uppercase tracking-[0.18em] text-muted-foreground">
- Variação
+ Variacao
  </label>
  <select
  className={nativeSelectClassName}
@@ -171,8 +171,7 @@ export function StoreProductActions({
 
  {!isAuthenticated ? (
  <p className="text-xs text-muted-foreground">
- Login obrigatorio para compra.
- {" "}
+ Login obrigatorio para comprar.{" "}
  <Link className="text-gold-400 hover:underline" href={signInHref}>
  Entrar agora
  </Link>
@@ -192,7 +191,7 @@ export function StoreProductActions({
  ) : null}
 
  <p className="text-xs text-muted-foreground">
- {productName} possui variacoes de tamanho e cor para escolha no pedido.
+ {productName} possui variacoes de tamanho e cor para voce escolher no pedido.
  </p>
  </div>
  );

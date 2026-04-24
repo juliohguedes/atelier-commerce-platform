@@ -47,7 +47,7 @@ export function StoreProductCard({ product }: StoreProductCardProps) {
  <CardContent className="flex flex-1 flex-col gap-3 p-4">
  <div className="space-y-1">
  <p className="text-[11px] uppercase tracking-[0.22em] text-gold-400">
- {product.collectionName ?? "Coleção autoral"}
+ {product.collectionName ?? "Colecao autoral"}
  </p>
  <h3 className="font-serif text-xl leading-tight">{product.name}</h3>
  {product.shortDescription ? (
@@ -74,7 +74,7 @@ export function StoreProductCard({ product }: StoreProductCardProps) {
  : "text-xs text-destructive"
  }
  >
- {product.isAvailable ? "Disponível em estoque" : "Indisponivel"}
+ {product.isAvailable ? "Disponivel em estoque" : "Indisponivel"}
  </p>
  </div>
  </CardContent>

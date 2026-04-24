@@ -1,7 +1,7 @@
 import { StoreCatalogFilters } from "@/components/store/store-catalog-filters";
 import { StoreProductCard } from "@/components/store/store-product-card";
-import { storePolicySections } from "@/lib/constants/store";
 import { Container } from "@/components/ui/container";
+import { storePolicySections } from "@/lib/constants/store";
 import { getStoreCatalogData } from "@/services/store/get-store-catalog-data";
 
 interface ShopPageProps {
@@ -16,9 +16,9 @@ export default async function ShopPage({ searchParams }: ShopPageProps) {
  <Container className="space-y-8 py-16 md:space-y-10">
  <header className="space-y-3">
  <p className="text-sm uppercase tracking-[0.24em] text-gold-400">Loja Online</p>
- <h1 className="section-title">Peças prontas em estoque</h1>
+ <h1 className="section-title">Pecas prontas em estoque</h1>
  <p className="max-w-3xl text-muted-foreground">
- Vitrine com categorias, coleções, filtros por tamanho/cor/preço, ordenação e
+ Vitrine com categorias, colecoes, filtros por tamanho, cor e preco, ordenacao e
  disponibilidade em tempo real.
  </p>
  </header>
@@ -44,7 +44,7 @@ export default async function ShopPage({ searchParams }: ShopPageProps) {
  </div>
  ) : (
  <div className="rounded-xl border border-border/70 bg-card/40 p-6 text-sm text-muted-foreground">
- Nenhum produto encontrado com os filtros atuais. Ajuste os filtros para ver mais itens.
+ Nenhum produto encontrado com os filtros atuais. Ajuste os filtros para ver mais pecas.
  </div>
  )}
 

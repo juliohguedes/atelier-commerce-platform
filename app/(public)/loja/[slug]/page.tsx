@@ -57,7 +57,7 @@ export default async function StoreProductPage({ params }: StoreProductPageProps
  <p className="text-sm uppercase tracking-[0.24em] text-gold-400">Loja Online</p>
  <h1 className="section-title">{product.name}</h1>
  <p className="max-w-3xl text-muted-foreground">
- {product.shortDescription ?? "Peça pronta para compra com variações de tamanho e cor."}
+ {product.shortDescription ?? "Peca pronta para compra com variacoes de tamanho e cor."}
  </p>
  </header>
 
@@ -102,7 +102,7 @@ export default async function StoreProductPage({ params }: StoreProductPageProps
  <section className="space-y-4">
  <div className="space-y-2 rounded-xl border border-border/70 bg-card/45 p-4">
  <p className="text-sm uppercase tracking-[0.16em] text-muted-foreground">
- {product.collectionName ?? "Coleção autoral"}
+ {product.collectionName ?? "Colecao autoral"}
  </p>
  <p className="text-3xl font-semibold text-gold-400">
  {formatCurrencyBRL(minPrice)}
@@ -114,7 +114,7 @@ export default async function StoreProductPage({ params }: StoreProductPageProps
  </p>
  ) : null}
  <p className={product.isAvailable ? "text-sm text-green-500" : "text-sm text-destructive"}>
- {product.isAvailable ? "Disponível em estoque" : "Indisponivel"}
+ {product.isAvailable ? "Disponivel em estoque" : "Indisponivel"}
  </p>
  <p className="text-sm text-muted-foreground">
  Estoque total disponivel: {product.totalAvailableUnits}
@@ -148,7 +148,7 @@ export default async function StoreProductPage({ params }: StoreProductPageProps
 
  <section className="grid gap-6 lg:grid-cols-2">
  <div className="space-y-3 rounded-xl border border-border/70 bg-card/45 p-4">
- <h2 className="text-2xl font-semibold">Descrição e caracteristicas</h2>
+ <h2 className="text-2xl font-semibold">Descricao e caracteristicas</h2>
  {product.description ? (
  <p className="text-sm text-muted-foreground">{product.description}</p>
  ) : null}
@@ -162,7 +162,7 @@ export default async function StoreProductPage({ params }: StoreProductPageProps
  </div>
 
  <div className="space-y-3 rounded-xl border border-border/70 bg-card/45 p-4">
- <h2 className="text-2xl font-semibold">Variações</h2>
+ <h2 className="text-2xl font-semibold">Variacoes</h2>
  <div className="grid gap-2">
  {product.variants.map((variant) => (
  <div
@@ -197,7 +197,7 @@ export default async function StoreProductPage({ params }: StoreProductPageProps
  <p className="font-medium">{relatedProduct.name}</p>
  <p className="text-sm text-gold-400">{formatCurrencyBRL(relatedProduct.minPrice)}</p>
  <p className="text-xs text-muted-foreground">
- {relatedProduct.isAvailable ? "Disponível" : "Indisponivel"}
+ {relatedProduct.isAvailable ? "Disponivel" : "Indisponivel"}
  </p>
  </Link>
  ))}
@@ -206,10 +206,10 @@ export default async function StoreProductPage({ params }: StoreProductPageProps
  </section>
 
  <section className="space-y-3">
- <h2 className="text-2xl font-semibold">Da mesma coleção</h2>
+ <h2 className="text-2xl font-semibold">Da mesma colecao</h2>
  {sameCollectionProducts.length === 0 ? (
  <p className="text-sm text-muted-foreground">
- Ainda não ha outros produtos vinculados nesta coleção.
+ Ainda nao ha outros produtos vinculados nesta colecao.
  </p>
  ) : (
  <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -222,7 +222,7 @@ export default async function StoreProductPage({ params }: StoreProductPageProps
  <p className="font-medium">{relatedProduct.name}</p>
  <p className="text-sm text-gold-400">{formatCurrencyBRL(relatedProduct.minPrice)}</p>
  <p className="text-xs text-muted-foreground">
- {relatedProduct.isAvailable ? "Disponível" : "Indisponivel"}
+ {relatedProduct.isAvailable ? "Disponivel" : "Indisponivel"}
  </p>
  </Link>
  ))}

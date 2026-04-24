@@ -1,0 +1,36 @@
+@import "../styles/theme.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background font-sans text-foreground antialiased;
+    background-image:
+      radial-gradient(circle at top, hsla(42, 40%, 45%, 0.12), transparent 38%),
+      linear-gradient(180deg, hsla(30, 10%, 8%, 0.65), transparent 18%);
+    min-height: 100vh;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-serif text-foreground;
+  }
+}
+
+@layer components {
+  .app-container {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-title {
+    @apply text-3xl font-semibold tracking-tight text-foreground sm:text-4xl;
+  }
+}

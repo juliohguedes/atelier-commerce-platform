@@ -1,0 +1,27 @@
+:root {
+  --font-heading: "Cormorant Garamond", "Bodoni MT", "Times New Roman", serif;
+  --font-body: "Manrope", "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
+  --background: 32 24% 6%;
+  --foreground: 42 18% 90%;
+  --card: 30 21% 9%;
+  --card-foreground: 42 18% 90%;
+  --popover: 30 21% 9%;
+  --popover-foreground: 42 18% 90%;
+  --primary: 42 38% 49%;
+  --primary-foreground: 30 30% 8%;
+  --secondary: 31 17% 14%;
+  --secondary-foreground: 40 20% 86%;
+  --muted: 30 13% 16%;
+  --muted-foreground: 37 11% 66%;
+  --accent: 32 24% 11%;
+  --accent-foreground: 42 24% 90%;
+  --destructive: 0 75% 45%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 38 24% 24%;
+  --input: 38 24% 24%;
+  --ring: 42 40% 52%;
+  --radius: 0.75rem;
+  --gold-400: 42 46% 60%;
+  --gold-500: 42 38% 49%;
+  --gold-600: 40 31% 38%;
+}
